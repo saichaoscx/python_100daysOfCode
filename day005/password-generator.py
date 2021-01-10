@@ -17,11 +17,12 @@ for i in range(nr_symbols):
     password += random.choice(symbols)
 for i in range(nr_numbers):
     password += random.choice(numbers)
-print(password)
+print("Easy password : " + password)
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
 #solution 1 :
+print('Hard passwords : ')
 print(''.join(random.sample(password, len(password))))
 #solution 2 :
 list_pass = list(password)
